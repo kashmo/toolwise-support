@@ -1,2 +1,2 @@
-# toolshed-support
-ToolShed Support and Privacy Policy
+# toolwise-support
+ToolWise Support and Privacy Policy
