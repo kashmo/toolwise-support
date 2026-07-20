@@ -68,3 +68,15 @@
 @media(max-width:900px){.stack-card{position:static;grid-template-columns:1fr;gap:34px;padding:38px 30px;min-height:0;margin-bottom:22px}.stack-copy h3{max-width:none}.stack-phone{width:228px}}
 @media(max-width:900px){.stack-card{position:sticky;top:calc(70px + var(--i) * 14px);min-height:0;padding:30px 24px;gap:22px;margin-bottom:18px}.stack-phone{width:150px}.stack-copy h3{font-size:clamp(23px,5.4vw,30px);margin:16px 0 12px}.stack-copy p{font-size:15px}.stack-num{width:32px;height:32px;font-size:12px}}
 @media(max-width:900px) and (max-height:620px){.stack-card{position:static;margin-bottom:22px}.stack-phone{width:210px}}
+
+/* Device frame proportions scale with --pw so the phone never over-rounds at small sizes. */
+.stack-phone{--pw:252px;width:var(--pw);border-radius:calc(var(--pw) * .2);padding:calc(var(--pw) * .044)}
+.stack-phone img{border-radius:calc(var(--pw) * .156)}
+.stack-phone .phone-notch{width:calc(var(--pw) * .29);height:calc(var(--pw) * .082);top:calc(var(--pw) * .066);border-radius:calc(var(--pw) * .041)}
+@media(max-width:900px){.stack-phone{--pw:150px;width:var(--pw)}}
+@media(max-width:900px) and (max-height:620px){.stack-phone{--pw:210px;width:var(--pw)}}
+
+/* Mobile: static flow. Sticky stacking pins each card for its own full height,
+   which on a phone means ~2100px of scrolling against a mostly-static screen.
+   Desktop keeps the stack. The freed height goes back into the screenshot. */
+@media(max-width:900px){.stack-card{position:static;min-height:0;padding:34px 26px;gap:28px;margin-bottom:20px}.stack-phone{--pw:210px;width:var(--pw)}.stack-copy h3{font-size:clamp(24px,5.6vw,32px)}.stack-copy p{font-size:16px}}
