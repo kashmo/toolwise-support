@@ -80,3 +80,13 @@
    which on a phone means ~2100px of scrolling against a mostly-static screen.
    Desktop keeps the stack. The freed height goes back into the screenshot. */
 @media(max-width:900px){.stack-card{position:static;min-height:0;padding:34px 26px;gap:28px;margin-bottom:20px}.stack-phone{--pw:210px;width:var(--pw)}.stack-copy h3{font-size:clamp(24px,5.6vw,32px)}.stack-copy p{font-size:16px}}
+
+/* ---- Hero phone levels to vertical, then locks; 90° marker lights up ---- */
+.phone-stage{--lock:min(1,calc(var(--p) * 2));transform:translateY(calc(var(--p) * -34px)) rotate(calc(3deg - var(--lock) * 3deg)) scale(calc(1 - var(--p) * .05))}
+@media(max-width:600px){.phone-stage{transform:translateY(calc(var(--p) * -16px)) rotate(calc(2deg - var(--lock) * 2deg))}}
+.hero-visual .measurement{transition:color .35s ease,opacity .35s ease,text-shadow .35s ease}
+.hero-visual .measurement:after{transition:background .35s ease,box-shadow .35s ease}
+:root{--level:#74b368}
+.hero-visual.level .measurement.side{color:var(--level);opacity:1;text-shadow:0 0 12px rgba(116,179,104,.5)}
+.hero-visual.level .measurement.side:after{background:var(--level);box-shadow:0 0 9px rgba(116,179,104,.65)}
+@media(prefers-reduced-motion:reduce){.phone-stage{transform:rotate(2deg)}.hero-visual .measurement,.hero-visual .measurement:after{transition:none}}
