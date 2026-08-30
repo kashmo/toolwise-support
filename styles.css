@@ -90,3 +90,9 @@
 .hero-visual.level .measurement.side{color:var(--level);opacity:1;text-shadow:0 0 12px rgba(116,179,104,.5)}
 .hero-visual.level .measurement.side:after{background:var(--level);box-shadow:0 0 9px rgba(116,179,104,.65)}
 @media(prefers-reduced-motion:reduce){.phone-stage{transform:rotate(2deg)}.hero-visual .measurement,.hero-visual .measurement:after{transition:none}}
+
+/* ---- Problem section illustration ---- */
+.problem-figure{margin:58px 0 0;padding:0}
+.problem-figure img{display:block;width:100%;height:auto;border-radius:24px;border:1px solid var(--line);box-shadow:var(--shadow)}
+.problem-figure figcaption{margin-top:16px;color:var(--muted);font-size:14px;text-align:center}
+@media(max-width:600px){.problem-figure{margin-top:34px}.problem-figure img{border-radius:14px}.problem-figure figcaption{font-size:13px;text-align:left}}
