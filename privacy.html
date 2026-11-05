@@ -1,1 +1,66 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy Policy — ToolWise</title><meta name="theme-color" content="#17151a"><link rel="icon" href="assets/toolwise-icon.png"><link rel="stylesheet" href="styles.css?v=6"><style>.legal{max-width:780px;padding:90px 0 130px}.legal h1{font-size:56px}.legal h2{font-size:25px;margin-top:44px}.legal p,.legal li{color:var(--muted)}.legal a{color:var(--amber2)}.legal .updated{font-size:13px}</style></head><body><header class="site-header"><nav class="nav shell"><a class="brand" href="index.html"><img src="assets/toolwise-icon.png" alt="" width="40"><span>ToolWise</span></a><a class="beta-pill" href="index.html">Back to ToolWise</a></nav></header><main class="legal shell"><div class="kicker">Privacy policy</div><h1>Your tools are your business.</h1><p class="updated">Last updated: August 2026</p><p>ToolWise is designed to help you catalog and find your tools while collecting as little information as practical.</p><h2>No ToolWise account</h2><p>ToolWise does not require you to create a separate ToolWise account. The app uses Apple technologies available on your device.</p><h2>Inventory and photo storage</h2><p>Your tool inventory and photos are stored locally and may sync through your personal Apple iCloud account using CloudKit. Apple’s terms and privacy practices govern iCloud. Photos you choose to send for tool identification are covered separately below.</p><h2>Barcode and product lookup</h2><p>When you scan a barcode, the UPC may be sent through a Cloudflare Worker to a third-party product database to look for matching product information. ToolWise may cache product lookup results to improve speed and reduce repeat requests. Do not place personal information in barcode fields.</p><h2>Photo recognition (Smart Identify)</h2><p>When a tool has no barcode, you can ask ToolWise to identify it from a photo. This is optional, runs only when you choose it, and is offered after a one-time disclosure inside the app.</p><p>If you use it, the photo is resized and stripped of location and other EXIF metadata on your device before it leaves your phone. It is then sent through a Cloudflare Worker operated for ToolWise to a third-party AI vision provider, which returns a suggested description of the tool. A per-installation identifier is included so the service can apply rate limits; it is not tied to your name or Apple ID.</p><p>The app never contacts the AI provider directly, and the photo is sent only to produce that suggestion. The result is always an editable draft — nothing is added to your inventory automatically. If you would rather not send photos, barcode scanning, on-device text recognition, and manual entry all remain available.</p><h2>Camera, microphone, and speech recognition</h2><p>ToolWise requests camera access for barcode scanning and tool photos. It requests microphone and speech-recognition access when you use voice entry. These permissions are requested only when needed and can be managed in iOS Settings.</p><h2>Data sales and advertising</h2><p>ToolWise does not sell your personal data and does not use your inventory to build an advertising profile.</p><h2>Support communication</h2><p>If you email support or submit a beta request, the information you choose to provide is used to respond to your request and manage beta participation.</p><h2>Contact</h2><p>Questions may be sent to <a href="mailto:kashanakins@gmail.com">kashanakins@gmail.com</a>.</p></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — ToolWise</title>
+<meta name="theme-color" content="#17151a">
+<link rel="icon" href="assets/toolwise-icon.png">
+<link rel="stylesheet" href="styles.css?v=6">
+<style>.legal{max-width:780px;padding:90px 0 130px}.legal h1{font-size:56px}.legal h2{font-size:25px;margin-top:44px}.legal p,.legal li{color:var(--muted)}.legal li{margin-bottom:8px}.legal li strong{color:inherit}.legal a{color:var(--amber2)}.legal .updated{font-size:13px}</style>
+</head>
+<body>
+<header class="site-header"><nav class="nav shell"><a class="brand" href="index.html"><img src="assets/toolwise-icon.png" alt="" width="40"><span>ToolWise</span></a><a class="beta-pill" href="index.html">Back to ToolWise</a></nav></header>
+<main class="legal shell">
+<div class="kicker">Privacy policy</div>
+<h1>Your tools are your business.</h1>
+<p class="updated">Last updated: November 2026</p>
+<p>ToolWise is designed to help you catalog and find your tools while collecting as little information as practical.</p>
+
+<h2>No ToolWise account</h2>
+<p>ToolWise does not require you to create a separate ToolWise account. The app uses Apple technologies available on your device.</p>
+
+<h2>Your inventory and iCloud backup</h2>
+<p>ToolWise stores only what you enter: your tools (names, brands, models, locations, photos, notes and purchase details), the receipts and documents you attach, and the loans you record. It is saved on your iPhone and, if iCloud is on, backed up to your private iCloud account through Apple’s CloudKit. Only you can access it. Apple’s terms and privacy practices govern iCloud.</p>
+<p>Your inventory is never sent to ToolWise’s servers. The features described below send only the barcode number, photo or project wording that the feature needs.</p>
+
+<h2>What ToolWise does not collect</h2>
+<p>ToolWise does not send analytics or usage data to anyone, and does not collect advertising identifiers or information that identifies you. The app contains no third-party SDKs, trackers or ad networks.</p>
+
+<h2>Barcode and product lookup</h2>
+<p>When you scan a barcode, the UPC may be sent through a Cloudflare Worker to a third-party product database to look for matching product information. Only the barcode number is sent — no other tool data. ToolWise may cache product lookup results to improve speed and reduce repeat requests. Do not place personal information in barcode fields.</p>
+
+<h2>Photo recognition (Smart Identify)</h2>
+<p>When a tool has no barcode — whether you are adding it or checking whether you already own one — you can ask ToolWise to identify it from a photo. This is optional, runs only when you choose it, and is offered after a one-time disclosure inside the app.</p>
+<p>If you use it, the photo is resized and stripped of location and other EXIF metadata on your device before it leaves your phone. It is then sent through a Cloudflare Worker operated for ToolWise to a third-party AI vision provider, which returns a suggested description of the tool. A per-installation identifier is included so the service can apply rate limits; it is not tied to your name or Apple ID. Each request also carries a proof from Apple’s App Attest service that it came from the genuine ToolWise app; that proof does not identify you.</p>
+<p>The app never contacts the AI provider directly, and the photo is sent only to produce that suggestion; the provider does not use it to train its models. The result is always an editable draft — nothing is added to your inventory automatically. If you would rather not send photos, barcode scanning, on-device text recognition, and manual entry all remain available.</p>
+
+<h2>Project tool lists</h2>
+<p>On the Projects tab, common projects are answered entirely on your device. For any other project you type, ToolWise sends only the words you typed — through the same Cloudflare Worker, with the same anonymous identifier and App Attest proof — to a third-party AI provider, which returns the typical list of tools that kind of job takes. Your inventory is never sent: which tools you own or are missing is always worked out on your device. The provider does not use your wording to train its models.</p>
+
+<h2>Receipts and documents</h2>
+<p>Receipts, warranties and manuals you attach to a tool are stored on your device and in your private iCloud account. They leave your phone only when you share them yourself, and are never sent to ToolWise’s servers or to any AI service. A document you send to ToolWise from another app’s share button waits inside ToolWise until you choose the tool it belongs to.</p>
+
+<h2>Lending</h2>
+<p>When you record that you lent a tool, the borrower’s name and the dates you choose are saved with the tool, on your device and in your private iCloud account. If you pick someone from Contacts, Apple’s contact picker gives ToolWise only the name you chose — ToolWise never reads your contacts. Loan reminders are scheduled on your iPhone; nothing about a loan is sent to a server.</p>
+
+<h2>Permissions</h2>
+<p>ToolWise asks for each permission the first time you use the feature that needs it, and you can change any of them in iOS Settings at any time.</p>
+<ul>
+<li><strong>Camera:</strong> to scan barcodes and paper receipts and to photograph tools — to add them or to check whether you already own one.</li>
+<li><strong>Photo library:</strong> only when you choose a photo of a tool or a receipt.</li>
+<li><strong>Microphone and speech recognition:</strong> when you ask a question or say a tool name out loud.</li>
+<li><strong>Notifications:</strong> only for the loan reminders you turn on.</li>
+</ul>
+
+<h2>Data sales and advertising</h2>
+<p>ToolWise does not sell your personal data and does not use your inventory to build an advertising profile.</p>
+
+<h2>Support communication</h2>
+<p>If you email support or submit a beta request, the information you choose to provide is used to respond to your request and manage beta participation.</p>
+
+<h2>Contact</h2>
+<p>Questions may be sent to <a href="mailto:kashanakins@gmail.com">kashanakins@gmail.com</a>.</p>
+</main>
+</body>
+</html>
